@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script>
+	// Current Location Input
+	let city = "Fayetteville";
+	let county = "Washington";
+	let state = "Arkansas";
+	let country = "United States";
+
+	// Future Location Input
+	// let latitude = 0;
+	// let longitude = 0;
+
+	// Takes in Location (Based on Coordinates)
+	function getWeather(part1, part2, part3, part4)
+	{
+		let url = "https://wttr.in/" + part1 + "," + part2 + "," + part3 + "?format=j1";
+		console.log(url);
+
+		var httpREQ = new XMLHttpRequest();
+		httpREQ.open("GET", url, false);
+		httpREQ.send(null);
+
+		return (httpREQ.responseText);
+	}
+
+	var json_obj = JSON.parse(getWeather(city, county, state, country));
+
+	console.log(json_obj.current_condition[0].temp_F);
+	console.log(json_obj.current_condition[0].weatherDesc[0].value);
+
+	// Queries NWS API (or wttr.in?)
+
+	// Parses Data to Look for Interested Characteristics
+
+</script>
+</html>

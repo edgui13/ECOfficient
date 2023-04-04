@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<p>hello</p>
+
+<script>
+function GetLocation()
+{
+  const url = "https://rdap.arin.net/registry/ip/130.184.252.77"; 
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.open("GET", url, false);
+  httpRequest.send(null);
+
+  return (httpRequest.responseText);
+}
+var location = JSON.parse(GetLocation());
+console.log(location);
+
+</script> 
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecofficient</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <script src="results.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJFj8LdIvQ_-s0EWqiH3bkg0LTYW2Olmw&libraries=places"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+</head>
+  </head>
+  <body>
+    
+    <header>
+      <a href="index.html">
+        <img src="images/EcofficientLogo.png" id="logo">
+      </a>  
+      <div class="login-container">
+        <button class="login-button" id="login-btn">Log In</button>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <h2>How To Use</h2>
+          <p>
+            Simply input your starting location and your desired destination. Leave it to us to show you to a green impact!
+          </p>
+          <p>
+            <i>Ex Very Broad</i>
+            <br>
+            <i>Start: Fayetteville, AR</i> &nbsp;<i>End: Springdale, AR</i>
+            <br>
+            <i>Ex Very Specific</i>
+            <br>
+            <i>Start: 754 South Royal Oaks Parkway, Fayetteville, AR</i>&nbsp;<i>End: 435 Garland Ave, Fayetteville, AR</i>
+          </p>
+      </div>
+      <hr />
+      <br></br>
+      
+        <form id="location-form">
+          <div>
+            <label for="location-start-input">Enter your starting location:</label>
+            <input type="text" id="location-start-input" required />
+            <br></br>
+          </div>
+          <div>
+            <label for="location-end-input">Enter your ending location:</label>
+            <input type="text" id="location-end-input" required />
+            <br></br>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <br></br>
+        <hr />
+        <!--          
+        <div>
+          <input id="pac-input" type="text" placeholder="Enter a location">
+        </div> 
+        -->
+        <div id="map"></div>
+
+        <div>
+        <h2>About Ecofficient</h2>
+          <p>
+            The goal of Ecofficient is to help you lower your carbon footprint
+            through our transportation application. 
+            Simply enter your starting location and your 
+            destination and let us do the rest!  
+            Our world class algorithm will compare weather 
+            conditions to your route selection and give 
+            you the best options for keeping your carbon
+            footprint low.
+          </p>
+      </div>
+    </main>
+
+    <hr />
+    <footer>
+      <p>&nbsp;&copy; 2023 Ecofficient</p>
+    </footer>
+  </body>
+</html>

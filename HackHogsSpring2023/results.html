@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecofficient Results</title>
+    <link rel="stylesheet" href="results.css" />
+    <script src="results.js" defer></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJFj8LdIvQ_-s0EWqiH3bkg0LTYW2Olmw&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img src="images/EcofficientLogo.png" id="logo"
+      /></a>
+    </header>
+
+    <main>
+      <div class="results-container">
+        <div class="result">
+          <h2>Emission Results</h2>
+          <p id="emission-results">_____</p>
+        </div>
+        <div class="result">
+          <h2>Fuel Saved</h2>
+          <p id="fuel-saved">_____</p>
+        </div>
+        <div class="result">
+          <h2>Distance</h2>
+          <p id="distance">_____</p>
+        </div>
+        <div class="result">
+          <h2>Current Conditions</h2>
+          <!-- <img id="start-weather-image" alt="Start location weather" /> -->
+          <p id="conditions-saved">_____</p>
+          <p>
+            <img id="start-weather-image" alt="Start location weather" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="end-weather-image" alt="End location weather" />
+          </p>
+        </div>
+      </div>
+
+      <hr />
+      <div class="best-savings">
+        <div id="message"></div>
+        <h2>Greenest Way to Travel</h2>
+        <div id="alt-1"></div>
+        <div id="alt-2"></div>
+        <div id="alt-3"></div>
+        <div id="alt-4"></div>
+        <div id="alt-5"></div>
+
+        <!-- <ol id="savings-ranked">
+          
+        </ol> -->
+      </div>
+
+      <hr />
+      <div id="map-container">
+        <h2>Route Map</h2>
+        <div class="map-wrapper">
+          <div id="floating-panel">
+            <b>Mode of Travel: </b>
+            <select id="mode">
+              <option value="DRIVING">Driving</option>
+              <option value="WALKING">Walking</option>
+              <option value="BICYCLING">Bicycling</option>
+              <option value="TRANSIT">Transit</option>
+            </select>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+      <br />
+      <button id="back-button">Go back</button>
+    </main>
+
+    <hr />
+    <footer>
+      <p>&nbsp;&copy; 2023 Ecofficient</p>
+    </footer>
+  </body>
+</html>
