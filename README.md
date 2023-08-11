@@ -1,2 +1,2 @@
-# UARK-Hackathon-SP23
-hack hogs - efficiency carbon footprint analyzer and recommender
+# ECOfficient
+UARK Hack-A-Thon SP23hack hogs - efficiency carbon footprint analyzer and recommender
